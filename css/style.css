@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("../assets/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+
+
+html
+{
+    min-height:100%;
+    font-size:4.8vw;
+    letter-spacing:normal;
+}
+
+html *
+{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-size:1.0rem;
+    font-weight:normal;
+    font-family:"Josefin Sans";
+
+}
+
+
+
+body
+{
+    width:100%;
+    min-height:100%;
+
+    
+    display:flex;
+    justify-content:center;
+    
+    background-color:hsl(235, 21%, 11%);
+    background-image:url("../assets/images/bg-mobile-dark.jpg");
+    background-repeat:no-repeat;
+    background-size:100vw calc(100vw/1.87);
+    padding-top:15%;
+}
+
+
+
+#main
+{
+    width:90%;
+   
+    
+}
+
+header
+{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    
+ 
+    margin-bottom:10%;
+}
+
+h1
+{
+    font-size:1.5rem;
+    letter-spacing:0.7rem;
+    font-weight:700;
+    color:white;
+   
+}
+
+#changeThemeButton
+{
+    width:6vw;
+    height:6vw;
+    background-image:url("../assets/images/icon-sun.svg");
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
+
+#todoCreation
+{
+    padding-left:5%;
+    padding-right:5%;
+    width:100%;
+    height:12vw;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    background-color: hsl(235, 24%, 19%);
+    margin-bottom:5%;
+
+}
+
+.stateIcon
+{
+    height:5vw;
+    width:5vw;
+    border:solid hsl(237, 14%, 26%);
+    border-radius:3vw;
+    margin-right:4%;
+}
+
+#todoCreation input
+{
+    background-color: hsl(235, 24%, 19%);
+    font-size:0.7rem;
+    font-weight:400;
+    border:none;
+    color:hsl(234, 11%, 52%);
+
+}
+
+#todoList
+{
+    width:100%;
+    background-color:hsl(235, 24%, 19%);
+    border-radius:15px;
+}
+
+.todoElement
+{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:14vw;
+    border-bottom:solid hsl(237, 14%, 26%);
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.todoElement p
+{
+    font-size:0.7rem;
+    color:hsl(234, 39%, 85%);
+    flex:1;  
+}
+
+.removeButton
+{
+    height:3vw;
+    width:3vw;
+    background-image:url("../assets/images/icon-cross.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+footer
+{
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:14vw;
+
+    margin-bottom:5%;
+}
+
+footer *
+{
+    color:hsl(234, 11%, 52%);
+    font-size:0.7rem;
+}
+
+#stateDesktop
+{
+    display:none;
+}
+
+#stateMobile
+{
+    padding-left:25%;
+    padding-right:25%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    background-color:hsl(235, 24%, 19%);
+    border-radius:15px;
+    width:100%;
+    height:12vw;
+    margin-bottom:10%;
+}
+
+#stateMobile div
+{
+    
+    color:hsl(234, 11%, 52%);
+    font-size:0.8rem;
+    font-weight:700;
+}
+
+#dragAndDropInfo
+{
+    color:hsl(234, 11%, 52%);
+    font-size:0.7rem;
+    width:100%;
+    text-align:center;
+    margin-bottom:20%;
+
+}
+
