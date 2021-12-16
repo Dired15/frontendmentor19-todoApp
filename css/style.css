@@ -46,8 +46,6 @@ body
 #main
 {
     width:90%;
-   
-    
 }
 
 header
@@ -55,8 +53,6 @@ header
     display:flex;
     width:100%;
     justify-content:space-between;
-    
- 
     margin-bottom:10%;
 }
 
@@ -108,7 +104,11 @@ h1
     font-weight:400;
     border:none;
     color:hsl(234, 11%, 52%);
+}
 
+#todoCreation input:focus
+{
+    outline:none;
 }
 
 #todoList
@@ -201,3 +201,214 @@ footer *
 
 }
 
+
+@media screen and (min-width:780px)
+{
+
+    html 
+    {
+        font-size:1.25vw;
+    }
+
+    html *
+    {
+        box-sizing: border-box;
+        margin:0px;
+        padding:0px;
+        font-size:1.0rem;
+        font-weight:normal;
+        font-family:"Josefin Sans";
+    }
+
+    body 
+    {
+        display:flex;
+        justify-content:center;
+        background-color:hsl(235, 21%, 11%);
+        background-image:url("../assets/images/bg-desktop-dark.jpg");
+        background-repeat:no-repeat;
+        background-size:100vw calc(100vw/4.8);
+        padding-top:5%;
+    }
+
+    #main
+    {
+       
+        width:40%;
+        
+    }
+
+    header
+    {
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    margin-bottom:7%;
+    }
+
+    h1
+    {
+    font-size:2.5rem;
+    letter-spacing:0.7rem;
+    font-weight:700;
+    color:white;
+   
+    }
+
+    #changeThemeButton
+    {
+    width:2.5vw;
+    height:2.5vw;
+    background-image:url("../assets/images/icon-sun.svg");
+    background-repeat:no-repeat; 
+    background-size:cover;
+    }
+
+#todoCreation
+{
+    padding-left:5%;
+    padding-right:5%;
+    width:100%;
+    height:4vw;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    background-color: hsl(235, 24%, 19%);
+    margin-bottom:5%;
+
+}
+
+.stateIcon
+{
+    height:2.5vw;
+    width:2.5vw;
+    border:solid hsl(237, 14%, 26%);
+    border-radius:3vw;
+    margin-right:4%;
+}
+
+#todoCreation input
+{
+    background-color: hsl(235, 24%, 19%);
+    font-size:0.8rem;
+    font-weight:400;
+    border:none;
+    color:hsl(234, 11%, 52%);
+}
+
+#todoCreation input:focus
+{
+    outline:none;
+}
+
+#todoList
+{
+    width:100%;
+    background-color:hsl(235, 24%, 19%);
+    border-radius:15px;
+    margin-bottom:10%;
+}
+
+.todoElement
+{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:4vw;
+    border-bottom:solid hsl(237, 14%, 26%);
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.todoElement p
+{
+    font-size:0.8rem;
+    color:hsl(234, 39%, 85%);
+    flex:1;  
+}
+
+.removeButton
+{
+    height:1.5vw;
+    width:1.5vw;
+    background-image:url("../assets/images/icon-cross.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+footer
+{
+    padding-left:5%;
+    padding-right:5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:4vw;
+
+    margin-bottom:5%;
+}
+
+footer *
+{
+    color:hsl(234, 11%, 52%);
+    font-size:0.8rem;
+}
+
+#stateDesktop
+{
+    display:flex;
+    justify-content:space-between;
+    width:30%;
+    
+}
+
+#stateDesktop div
+{
+    
+    color:hsl(234, 11%, 52%);
+    font-size:0.8rem;
+    font-weight:700;
+}
+
+#stateMobile
+{
+    display:none;
+    padding-left:25%;
+    padding-right:25%;
+    justify-content:space-between;
+    align-items:center;
+    
+    background-color:hsl(235, 24%, 19%);
+    border-radius:15px;
+    width:100%;
+    height:12vw;
+    margin-bottom:10%;
+}
+
+#stateMobile div
+{
+    
+    color:hsl(234, 11%, 52%);
+    font-size:0.8rem;
+    font-weight:700;
+}
+
+#dragAndDropInfo
+{
+    color:hsl(234, 11%, 52%);
+    font-size:0.7rem;
+    width:100%;
+    text-align:center;
+    margin-bottom:20%;
+
+}
+
+
+    
+
+
+    
+
+
+
+}
